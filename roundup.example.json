@@ -1,0 +1,172 @@
+{
+  "_schema": {
+    "date": "ISO date of the issue",
+    "items[]": {
+      "id": "short kebab-case slug, unique within the issue",
+      "bucket": "A | B | C",
+      "status": "NEW | UPDATE",
+      "theme": "existing themes.json id this item advances, or null. Required for UPDATE.",
+      "new_theme": "optional {id, title}: create a storyline. Only if you expect a follow-up within two weeks.",
+      "headline": "<= 12 words, the development, no source name",
+      "summary": "2-3 sentences, facts and numbers only. **bold** and [text](url) allowed.",
+      "why": "one sentence: the so-what for Jesper",
+      "source": {"name": "outlet as it should appear (FT, MEMO, Bloomberg via Techmeme)", "url": "original article when you have it"},
+      "top": "1, 2 or 3 on exactly three items",
+      "dek": "optional one-liner for the Top 3 slot; defaults to the summary's first sentence",
+      "flag": "optional true: needs attention today (red dot). Use rarely.",
+      "state_note": "optional one line for themes.json history; defaults to the headline"
+    }
+  },
+  "date": "2026-10-05",
+  "items": [
+    {
+      "id": "iran-oil-minister",
+      "bucket": "A",
+      "status": "UPDATE",
+      "theme": "iran-conflict-economics",
+      "top": 1,
+      "headline": "Iran oil minister resigns amid sanctions pressure",
+      "dek": "Mohsen Paknejad steps down as US Treasury says Tehran has zero floating oil and will earn nothing this week",
+      "summary": "Mohsen Paknejad resigned as oil minister; President Pezeshkian appointed Hamid Bovard (NIOC CEO) as acting minister. US Treasury Secretary Bessent claims Iran has no floating oil and will earn zero revenue this week.",
+      "why": "A mid-crisis leadership change signals sanctions biting Tehran's capacity to sustain the conflict and fund proxies.",
+      "source": {"name": "MEMO", "url": "https://www.middleeastmonitor.com/20261005-iran-oil-minister-resigns-bovard-appointed-acting-minister/"},
+      "state_note": "Oil minister Paknejad resigns; Bessent: zero floating oil, no revenue this week"
+    },
+    {
+      "id": "irgc-threatens-bases",
+      "bucket": "A",
+      "status": "UPDATE",
+      "theme": "hormuz-crisis",
+      "headline": "IRGC threatens US bases if ground invasion launches",
+      "summary": "IRGC commander Ali Fadavi warns all US bases and vessels will be targeted if Washington launches a ground invasion. Says Iran's production of military equipment exceeds its use rate and argues Iran and Oman should jointly enforce Hormuz rules.",
+      "why": "Iran escalates deterrence rhetoric as the US moves amphibious and carrier forces toward the region.",
+      "source": {"name": "MEMO", "url": "https://www.middleeastmonitor.com/20261005-iran-threatens-to-target-us-bases-warships-if-washington-launches-ground-invasion/"}
+    },
+    {
+      "id": "trump-iran-nuclear",
+      "bucket": "A",
+      "status": "UPDATE",
+      "theme": "hormuz-crisis",
+      "top": 3,
+      "headline": "Trump claims Iran abandoned nuclear weapons",
+      "dek": "Says Tehran has \"virtually given up\" any nuclear plans, contradicting eight months of escalation",
+      "summary": "Trump told reporters Saturday that Iran has \"virtually given up\" plans for nuclear weapons, one of his stated war objectives. Contradicts Pezeshkian's UN remarks offering dilution of enriched stockpiles under verification in exchange for sanctions relief.",
+      "why": "If accurate it marks a major strategic shift; if spin, it undermines credibility amid Camp David talks on Iran and Yemen strategy.",
+      "source": {"name": "MEMO", "url": "https://www.middleeastmonitor.com/20261004-trump-says-iran-has-virtually-given-up-any-plans-for-nuclear-weapons/"}
+    },
+    {
+      "id": "algeria-uae-permanent",
+      "bucket": "A",
+      "status": "NEW",
+      "theme": null,
+      "new_theme": {"id": "algeria-uae-severance", "title": "Algeria-UAE diplomatic severance"},
+      "top": 2,
+      "headline": "Algeria-UAE diplomatic severance now permanent",
+      "dek": "Tebboune says Algeria will not reverse the break, accuses UAE of seeking \"domination\"",
+      "summary": "President Tebboune says Algeria will not reverse its decision to sever ties with the UAE, accusing Abu Dhabi of seeking \"domination\" after Algeria helped establish the UAE's oil company. Airspace restrictions remain until the end of 2026.",
+      "why": "Solidifies a major Gulf rift and positions Algeria as the anti-UAE North African anchor, complicating regional energy and security cooperation.",
+      "source": {"name": "MEMO", "url": "https://www.middleeastmonitor.com/20261005-tebboune-says-algeria-will-not-reverse-decision-to-sever-ties-with-uae/"}
+    },
+    {
+      "id": "china-claude-gray-market",
+      "bucket": "A",
+      "status": "UPDATE",
+      "theme": "export-control-circumvention",
+      "headline": "China Claude gray market runs on identity farms and USDT",
+      "summary": "The Information reports China's shadow economy of token resellers uses accumulated identities and USDT-funded cards to obtain Claude accounts, routing through proxies. Builds on prior Nscale/ByteDance (75% of sales via Norway) and dark-web resale patterns.",
+      "why": "Export controls are leaking at scale through stablecoin and identity arbitrage, with Anthropic, Google and OpenAI access sold at a 97% discount.",
+      "source": {"name": "The Information via Techmeme", "url": "https://www.techmeme.com/261005/p5#a261005p5"}
+    },
+    {
+      "id": "huawei-qualcomm",
+      "bucket": "A",
+      "status": "NEW",
+      "theme": null,
+      "headline": "Huawei-Qualcomm sign first 5G patent licensing deal",
+      "summary": "Huawei and Qualcomm announce a multi-year patent licence covering AI, 5G, computing and networking technology, Huawei's first 5G agreement with Qualcomm.",
+      "why": "Signals possible US-China tech stabilisation and dilutes the export-control grip if IP flows resume.",
+      "source": {"name": "Techmeme", "url": "https://www.techmeme.com/261005/p7#a261005p7"}
+    },
+    {
+      "id": "altman-bad-things",
+      "bucket": "A",
+      "status": "UPDATE",
+      "theme": "openai-agent-security",
+      "headline": "Altman: world should \"accept some bad things happening\"",
+      "summary": "Sam Altman tells Axios he is \"very uncomfortable\" with religious framing of AI, calling it \"a real safety issue\" as Anthropic engages religious leaders. In a Politico interview he says the world should \"accept some bad things happening\" for AI's benefits.",
+      "why": "The OpenAI CEO doubles down on risk tolerance after the California AG subpoena and David Robinson's resignation.",
+      "source": {"name": "Axios / Politico via Techmeme", "url": "https://www.techmeme.com/261005/p3#a261005p3"}
+    },
+    {
+      "id": "chatgpt-visual-ads",
+      "bucket": "A",
+      "status": "NEW",
+      "theme": null,
+      "headline": "OpenAI to test visual ads in ChatGPT image generation",
+      "summary": "OpenAI will test a \"clearly labeled\" visual ad format in ChatGPT later this month, US only, shown during image generation.",
+      "why": "First direct advertising monetisation beyond subscriptions, following revenue-concentration warnings across the frontier labs.",
+      "source": {"name": "Techmeme", "url": "https://www.techmeme.com/261005/p10#a261005p10"}
+    },
+    {
+      "id": "groq-nvidia-suit",
+      "bucket": "B",
+      "status": "NEW",
+      "theme": null,
+      "headline": "Groq engineers sue Nvidia over $20B acqui-hire",
+      "summary": "Former Groq engineers filed a Delaware lawsuit alleging the $20B \"non-exclusive\" Nvidia acqui-hire in 2025 undervalued employee equity.",
+      "why": "A contested marquee AI-infra deal could chill future acqui-hires and reset valuation norms for talent-heavy AI startups.",
+      "source": {"name": "Techmeme", "url": "https://www.techmeme.com/261005/p11#a261005p11"}
+    },
+    {
+      "id": "robco-unicorn",
+      "bucket": "B",
+      "status": "NEW",
+      "theme": null,
+      "headline": "RobCo hits $1B valuation on $40M share sale",
+      "summary": "Munich-based RobCo (robotic arms plus automation software) sold $40M of shares at a $1B valuation, doubling from about $500M after a $100M raise in January.",
+      "why": "Europe's newest robotics unicorn shows capital flowing to embodied, non-LLM AI applications.",
+      "source": {"name": "Techmeme", "url": "https://www.techmeme.com/261005/p9#a261005p9"}
+    },
+    {
+      "id": "okx-ice-tokenized",
+      "bucket": "B",
+      "status": "UPDATE",
+      "theme": "crypto-regulation",
+      "headline": "OKX-ICE venture seeks SEC approval for tokenized stocks",
+      "summary": "The OKX-ICE joint venture filed for SEC approval to offer tokenized shares of 63 NYSE-listed firms under the new US tokenization rules.",
+      "why": "Crypto-TradFi convergence accelerates; approval would open stock trading via stablecoins and 24/7 equity markets.",
+      "source": {"name": "Techmeme", "url": "https://www.techmeme.com/261005/p2#a261005p2"}
+    },
+    {
+      "id": "stability-ai-music",
+      "bucket": "B",
+      "status": "NEW",
+      "theme": null,
+      "headline": "Sean Parker repositions Stability AI around music",
+      "summary": "The Information reports Sean Parker has repositioned Stability AI after Emad Mostaque's ousting, pivoting to AI tools for music professionals backed by major labels.",
+      "why": "A distressed AI asset repurposed as a B2B vertical play, with the music industry choosing tools over litigation.",
+      "source": {"name": "The Information via Techmeme", "url": "https://www.techmeme.com/261004/p23#a261004p23"}
+    },
+    {
+      "id": "ethiopia-no-approval",
+      "bucket": "C",
+      "status": "UPDATE",
+      "theme": "egypt-ethiopia-dam",
+      "headline": "Ethiopia rejects Egyptian approval requirement for new dams",
+      "summary": "Water minister Habtamu Itefa says Ethiopia has the right to build dams without Egyptian consent, citing sovereignty and \"modern\" Nile management principles. He deleted then reposted remarks comparing GERD to Egypt's Aswan Dam.",
+      "why": "The GERD dispute is escalating into public nationalist rhetoric days after reciprocal diplomat expulsions.",
+      "source": {"name": "MEMO", "url": "https://www.middleeastmonitor.com/20261005-ethiopia-water-minister-says-country-does-not-need-egypts-approval-to-build-new-dams/"}
+    },
+    {
+      "id": "yemen-700-houthis",
+      "bucket": "C",
+      "status": "UPDATE",
+      "theme": "yemen-escalation-2026",
+      "flag": true,
+      "headline": "Yemeni army claims 700 Houthi fighters killed in a week",
+      "summary": "Government forces say 257 operations across Sanaa, Midi, Baqim, Al-Jawf, Marib, Al-Bayda, Lahj and Taiz killed at least 700 Houthi fighters and destroyed 170 vehicles, with the main effort on the Taiz fronts.",
+      "why": "A sustained ground offensive is under way as the Mecca Pact activates and Pakistan vows to defend Saudi Arabia \"by any means\".",
+      "source": {"name": "MEMO", "url": "https://www.middleeastmonitor.com/20261004-yemeni-army-says-700-houthi-fighters-killed-in-257-operations-across-country/"}
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Runtime state — never commit
+themes.json
+seen.json
+roundup.json
+archive/
+roundup_email.html
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
